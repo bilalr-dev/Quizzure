@@ -1,4 +1,4 @@
-Certainly! Below is a basic README template for your Flutter quiz app. You can customize it further based on your specific requirements.
+Certainly! Here's an updated version of your README file with a screenshot:
 
 ```markdown
 # Quizzure Flutter App
@@ -14,8 +14,7 @@ Quizzure is a simple quiz app built with Flutter. Test your knowledge by answeri
 
 ## Screenshots
 
-![Alt text](/images/Screenshot/Screenshot-1.png?raw=true)
-
+![Screenshot](/images/Screenshot/Screenshot-1.png?raw=true)
 
 ## Getting Started
 
@@ -36,7 +35,7 @@ git clone https://github.com/bilalr-dev/Quizzure.git
 2. Change into the project directory:
 
 ```bash
-cd quizzure-flutter
+cd Quizzure
 ```
 
 3. Run the app:
@@ -64,5 +63,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc.
-
 ```
+
