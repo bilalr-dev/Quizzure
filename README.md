@@ -1,5 +1,3 @@
-Certainly! Here's an updated version of your README file with a screenshot:
-
 ```markdown
 # Quizzure Flutter App
 
@@ -11,10 +9,6 @@ Quizzure is a simple quiz app built with Flutter. Test your knowledge by answeri
 - Immediate feedback on correct and incorrect answers
 - Engaging images accompanying each question
 - Endless fun to test your knowledge
-
-## Screenshots
-
-![Screenshot](/images/Screenshot/Screenshot-1.png?raw=true)
 
 ## Getting Started
 
