@@ -14,7 +14,8 @@ Quizzure is a simple quiz app built with Flutter. Test your knowledge by answeri
 
 ## Screenshots
 
-![Screenshot 1](images/Screenshot/Screenshot-1.png)
+![Alt text](/images/Screenshot/Screenshot-1.png?raw=true)
+
 
 ## Getting Started
 
