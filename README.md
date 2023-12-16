@@ -52,10 +52,5 @@ The app should now be running on your device or emulator.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc.
-```
+Feel free to use my code in your project.
 
