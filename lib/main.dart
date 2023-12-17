@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'app_quizzure.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 AppQuizzure appQuizzure = AppQuizzure();
 
@@ -33,6 +34,7 @@ class QuizzPage extends StatefulWidget {
 
 class _QuizzPageState extends State<QuizzPage> {
   List<Widget> answerResults = [];
+  int score = 0;
 
   void checkAnswer(bool whatUserPicked) {
     bool correctAnswer = appQuizzure.getQuestionAnswer();
@@ -47,6 +49,7 @@ class _QuizzPageState extends State<QuizzPage> {
             ),
           ),
         );
+        score++;
       } else {
         answerResults.add(
           Padding(
@@ -58,7 +61,30 @@ class _QuizzPageState extends State<QuizzPage> {
           ),
         );
       }
-      appQuizzure.nextQuestion();
+      if (appQuizzure.isFinished() == true) {
+        Alert(
+          context: context,
+          title: "Quizz Finished.",
+          desc: "You have answered all the questions.\nYour score is: $score",
+          buttons: [
+            DialogButton(
+              child: Text(
+                "Play again",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              width: 120,
+            )
+          ],
+        ).show();
+        appQuizzure.reset();
+        answerResults = [];
+        score = 0;
+      } else {
+        appQuizzure.nextQuestion();
+      }
     });
   }
 
